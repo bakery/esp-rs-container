@@ -2,4 +2,5 @@
 
 echo "hello $1"
 ls -al
-rustup toolchain list
+env
+# rustup toolchain list
