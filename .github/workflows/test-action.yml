@@ -1,0 +1,12 @@
+name: Test custom action
+
+on:
+  push:
+    branches: [custom-action]
+
+jobs:
+  esp32c3-training:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hi
+        run: echo "Hi"
