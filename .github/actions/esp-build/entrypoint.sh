@@ -1,6 +1,7 @@
 #!/bin/sh -l
 
 echo "hello $1"
+su root
 id -u -n
 ls /home/esp -al
 chown -R root:root /home/esp
