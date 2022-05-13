@@ -5,8 +5,9 @@ on:
     branches: [custom-action]
 
 jobs:
-  esp32c3-training:
+  test-custom-action:
     runs-on: ubuntu-latest
     steps:
-      - name: Say Hi
-        run: echo "Hi"
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - uses: ./.github/actions/esp-build
